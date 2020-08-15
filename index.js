@@ -69,6 +69,10 @@ app.post("/encode", (req, res) => {
   res.send(data);
 });
 
+app.get("/check",(req,res)=>{
+       res.send("working")
+})
+
 app.post("/decode", (req, res) => {
   var data = decoder(req.body.name);
 
